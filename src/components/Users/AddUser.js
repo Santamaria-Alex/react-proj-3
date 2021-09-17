@@ -23,7 +23,8 @@ const AddUser = props => {
             return;
         }
 
-        console.log(enteredUsername, enteredAge);
+        //calling this up on App.js
+        props.onAddUser(enteredUsername, enteredAge);
 
         //set input fields to blank once submitted
         setEnteredAge('');
